@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -12,10 +13,12 @@ import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
 
+@DisplayName("Мобильные автотесты")
 public class Tests extends TestBase {
 
     @Test
     @Tag("android")
+    @DisplayName("Проверка наличия результатов поиска")
     void searchInputTest() {
 
         step("Вводим поисковый запрос в поле поиска", () -> {
@@ -29,6 +32,7 @@ public class Tests extends TestBase {
 
     @Test
     @Tag("android")
+    @DisplayName("Открытие первого результата поиска")
     void openFoundContentTest() {
 
         step("Вводим поисковый запрос в поле поиска", () -> {
@@ -45,6 +49,7 @@ public class Tests extends TestBase {
     }
 
     @Tag("ios")
+    @DisplayName("Наличие текста в запросе")
     @Test
     public void searchIosTest() {
         step("Вводим поисковый запрос", () -> {
