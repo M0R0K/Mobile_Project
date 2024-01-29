@@ -8,7 +8,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+
 import static com.codeborne.selenide.Selenide.*;
+
 public class TestBase {
 
     @BeforeAll
@@ -27,8 +29,11 @@ public class TestBase {
     @AfterEach
     void addAttachments() {
         String sessionId = sessionId().toString();
-        Attach.pageSource();
+        if (Configuration.browser.equals("android")) {
+
+            Attach.pageSource();
+            Attach.addVideo(sessionId);
+        }
         closeWebDriver();
-        Attach.addVideo(sessionId);
     }
 }
