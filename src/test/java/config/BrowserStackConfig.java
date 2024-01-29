@@ -4,8 +4,7 @@ import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-        "classpath:config/base.properties",
-        "classpath:config/${env}.properties"
+        "classpath:${env}.properties"
 })
 public interface BrowserStackConfig extends Config {
 
