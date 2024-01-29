@@ -50,17 +50,13 @@ public class Tests extends TestBase {
     }
 
     @Tag("ios")
-    @DisplayName("Наличие текста в запросе")
+    @DisplayName("Наличие кнопки")
     @Test
     public void searchIosTest() {
-        step("Проверяем, что тест запустился на IOS", () -> {
+        step("Проверяем, что кнопка видима", () -> {
 
             $(id("Text Button")).shouldBe(visible);
-       //     $(id("Text Input")).sendKeys("test");
-       //     $(id("Text Input")).pressEnter();
         });
-      //  step("Проверяем наличие текста", () -> {
-        //    $(id("Text Output")).shouldHave((text("test")));
-     //   });
+
     }
 }

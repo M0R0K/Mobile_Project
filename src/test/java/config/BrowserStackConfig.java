@@ -9,11 +9,11 @@ import org.aeonbits.owner.Config;
 public interface BrowserStackConfig extends Config {
 
     @Key("user")
-    @DefaultValue("konstantinponoma_D5b6GJ")
+    @DefaultValue("konstantinponoma1")
     String getUser();
 
     @Key("key")
-    @DefaultValue("1J37VSAdXUgQadooFF4v")
+    @DefaultValue("Xm7oxCr3o3urzg9XpW6y")
     String getKey();
 
     @Key("baseUrl")
