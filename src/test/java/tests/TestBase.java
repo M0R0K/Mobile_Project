@@ -29,11 +29,8 @@ public class TestBase {
     @AfterEach
     void addAttachments() {
         String sessionId = sessionId().toString();
-        if (Configuration.browser.equals("android")) {
-
-            Attach.pageSource();
-            Attach.addVideo(sessionId);
-        }
+        Attach.pageSource();
+        Attach.addVideo(sessionId);
         closeWebDriver();
     }
 }
