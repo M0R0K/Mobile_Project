@@ -1,6 +1,6 @@
 # Проект по автоматизации тестирования для мобильного приложения [Википедия](https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0) с использованием сервиса [Browserstack](https://www.browserstack.com/)
 
-![Wiki](media/screen/wiki.png "Главная страница")
+![Wiki](media/screens/wiki.jpg "Главная страница")
 
 ##  Содержание:
 
@@ -71,7 +71,7 @@ ____
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/Ponomarenko_mobile1_23"> Jenkins </a>
 Для доступа в Jenkins необходима регистрация на ресурсе [Jenkins](https://jenkins.autotests.cloud/)
 
-![build](media/screen/Build_Jenkins.png "Сборка Jenkins")
+![build](media/screens/jenkins.jpg "Сборка Jenkins")
 Для запуска сборки необходимо перейти в раздел <code>Build Now</code>, и нажать кнопку <code>Build</code>.
 
 </p>
@@ -79,18 +79,14 @@ ____
 
 ____
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/023_03_ElenaMalysheva98_WikiSearchTests/allure/"> Allure-отчета </a>
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/Ponomarenko_mobile1_23/19/allure/"> Allure-отчета </a>
 
 
 
 <p align="center">
-<img title="Allure Overview" src="media/screen/Allure_Report.png">
+<img title="Allure Overview" src="media/screens/allureReport.jpg">
 </p>
 
-## 📊 Графики Allure
-<p align="center">
-<img title="Графики" src="media/screen/Graphs.png">
-</p>
 
 ____
 
@@ -102,20 +98,16 @@ ____
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screen/dashboards.png">
+<img title="Allure TestOps DashBoard" src="media/screens/allure1.jpg">
 </p>
 
-## 📱 Тест-план дипломного проекта
-
-![TestPlan](media/screen/TestPlan.png "Тест-план дипломного проекта")
 
 ## 📑 Тест-кейсы дипломного проекта
 
-![TestCases](media/screen/TestCases.png "Тест-кейсы дипломного проекта")
+![TestCases](media/screens/allure2.jpg "Тест-кейсы дипломного проекта")
 
-## 🚀 Запуски дипломного проекта
 
-![Launches](media/screen/Launches.png "Тест-кейсы дипломного проекта")
+
 ____
 <a id="jira"></a>
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> </a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1124"> Jira </a>
@@ -123,7 +115,7 @@ ____
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в задаче отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
 <p align="center">
-<img title="Jira Task" src="media/screen/taskinjira.png">
+<img title="Jira Task" src="media/screens/jira.jpg">
 </p>
 
 ____
@@ -135,7 +127,7 @@ ____
 После завершения сборки, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов в специально настроенный чат.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screen/chat.png">
+<img width="70%" title="Telegram Notifications" src="media/screens/telegram.jpg">
 </p>
 
 ----
@@ -147,5 +139,5 @@ ____
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 
 <p align="center">
-  <img title="Video" src="media/screen/Video.gif">
+  <img title="Video" src="media/screens/selenoid.gif">
 </p>
